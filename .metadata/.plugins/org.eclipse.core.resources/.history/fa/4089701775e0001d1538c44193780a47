@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{normal/base::layout(~{::section})}">
+<head>
+<meta charset="UTF-8" />
+<title>User Dashboard</title>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="card text-center p-4">
+				<div class="card-body">
+					<img style="height: 200px; width: 200px;"
+						class="my_profile_picture"
+						th:src="@{'/img/Google_Contacts_logo.png'}" alt="profile photo" />
+				</div>
+				<h2 class="text-center mt-2 text-secondary font-italic">Start
+					Adding Your Contacts On Cloud...</h2>
+				<a th:href="@{/user/add-contact}"
+					class="btn btn-primary btn-block text-uppercase mt-4">Add New
+					Contact</a>
+					
+				<hr/>
+				<h3 class="my-3">Donate Us</h3>
+				<input type="text" class="form-control my-2" placeholder="Enter amount here" />
+				<div class="container text-center mt-4">
+					<button class="btn btn-block btn-success">Pay</button>
+				</div>
+			</div>
+		</div>
+		<script>
+		$(document).ready(()=>{
+			$(".item").removeClass('active');
+			$('#home-link').addClass("active");
+		})	
+		</script>
+	</section>
+</body>
+</html>

@@ -1,0 +1,15 @@
+package com.smart.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class ForgotController {
+
+	//email id form open handler
+	@GetMapping("/forgot-email")
+	public String openEmailForm()
+	{
+		return "forgot_email_form";
+	}
+}

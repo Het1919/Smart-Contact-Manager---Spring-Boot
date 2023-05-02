@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{normal/base::layout(~{::section})}">
+<head>
+<meta charset="UTF-8" />
+<title>Settings</title>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<h1>This is Setting Page</h1>
+		</div>
+		<script>
+		$(document).ready(()=>{
+			$(".item").removeClass('active');
+			$('#settings-link').addClass("active");
+		})	
+		</script>
+	</section>
+</body>
+</html>

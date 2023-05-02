@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{normal/base::layout(~{::section})}">
+<head>
+<meta charset="UTF-8" />
+<title>User Dashboard</title>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="card text-center">
+				<div class="card-body">
+					<img style="height: 200px; width: 200px;"
+						class="my_profile_picture" th:src="@{'/img/Google_Contacts_logo.png'}"
+						alt="profile photo" />
+				</div>
+				<h1 class="text-center mt-2">Start Adding Your Contacts On Cloud...</h1>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::layout(~{::section})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+</head>
+<body>
+	<section>
+
+		<div id="login">
+			<div class="container">
+				<div id="login-row"
+					class="row justify-content-center align-items-center">
+					<div id="login-column" class="col-md-6">
+					
+						<div id="login-box" class="col-md-12">
+							
+							<!-- Email Form -->
+							<h3 class="text-center mt-2">Your Registered Email</h3>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+</body>
+</html>

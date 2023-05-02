@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>Add Contact</title>
+</head>
+<body>
+	<section>
+		
+		<div class="card mr-3 mt-1">
+			<div class="card-body">
+				<h1 class="text-center">Add Contact</h1>
+				
+				<div class="container-fluid mt-1">
+					
+					<div class="row">
+						
+						<div class="col-md-10 offset-md-1">
+							
+							<form action="#" th:object="${contact}" 
+							      enctype="multipart/form-data" method="POST"
+							      th:action="@{/user/process-contact}" class="mt-2">
+							
+							<!-- First name -->
+							
+							<div class="input-group">
+								<div class="input-group-prepend">	
+									<div class="input-group-text">
+										<i class="fa fa-plus"></i>
+									</div>
+								</div>
+								<input type="text" id="firstname" name="name" 
+								       placeholder="Enter name here" 
+								       class="form-control"/>
+							</div>
+							
+							</form>
+						
+						</div>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		
+	</section>
+</body>
+</html>

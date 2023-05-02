@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::layout(~{::section})}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Smart Contact Manager</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+	integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<section>
+		<!-- Main Content -->
+
+		<div class="container my-5 aboutUs">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>About Us</h2>
+					<p>I have built Smart Contact Manager to help individuals and
+						businesses manage their contacts efficiently. My goal is to make
+						contact management simple, fast, and secure.</p>
+					<p>With Smart Contact Manager, you can easily store and manage
+						all your contacts in one place. You can also add description about
+						your contacts.</p>
+				</div>
+				<div class="col-md-6">
+					<img
+						src="https://www.bluearrow.co.uk/-/media/bluearrow/find-a-job/featured-employers/lloyds/job-descriptions/customer-relationship-manager/lbg-customer-relationship-manager--jd-facebook.jpg"
+						alt="About Us Image" class="img-fluid">
+				</div>
+			</div>
+		</div>
+		<!-- End Main Content -->
+
+		<!-- Social Media Link Start -->
+		<div class="container text-center">
+		
+		<a href="https://www.instagram.com/mr._het_19/"><img style="width: 40px; margin-right:6px; "
+				th:src="@{/img/instagram.png}" alt="" /></a>
+		<a href="https://twitter.com/Hetshah191"><img style="width: 40px; margin-right:6px;"
+				th:src="@{/img/twitter.png}" alt="" /></a> 
+		<a href="https://www.linkedin.com/in/het-shah1919/"><img style="width: 40px; margin-right:6px;"
+				th:src="@{/img/linkedin.png}" alt="" /> </a> 
+		<a href="https://github.com/Het1919"><img style="width: 40px;"
+				th:src="@{/img/github.png}" alt="" /></a>	
+		</div>
+		<!-- Social Media Link ends -->
+
+		<!-- Footer -->
+		<footer class="bg-dark text-white py-3 footer text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 ">
+						<p>&copy; 2023 Smart Contact Manager</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+	</section>
+
+
+
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
